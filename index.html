@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website  </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/af020c3337.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/TEAMLOGO.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SDG 11</p>
+                <h1>Smart-Bin<span>Management</span><br>System</h1>
+            </div>
+        </div>
+
+    </div>
+    <!----------------problem----------> 
+    <div id="problem">
+        <div class="container">
+            <div class="row">
+                <div class="problem-col-1">
+                    <img src="images/mainPhoto.png">
+                </div>
+                <div class="problem-col-2">
+                    <h1 class="sub-title"> Problem Statement</h1>
+                    <p>I’m Mehul Dongre, a second-year B.Tech student specializing in Computer Science Engineering at SRM Chennai. With a budding curiosity for tech, I'm immersing myself in Java programming and exploring Data Structures and Algorithms, building a strong foundation in these areas. My interest goes beyond academics—I’ve actively contributed to my college’s sponsorship committee, successfully helping to secure brands like Redbull, McCaffeine, and Ajio for our fest. 
+                        I’ve also been involved in the MUN society and drama club, which enriched my ability to communicate, collaborate, and take on diverse challenges. Driven by my knack for consulting and management, I’m expanding my skills in content writing, graphic design, marketing, and prompt engineering. My family’s background in consulting has inspired my own interest in the field, as I genuinely enjoy understanding people’s ideas and collaborating to solve problems. I’m a hard-working, motivated individual who thrives in team settings and is excited about the learning journey ahead.</p>                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('level')">Level</p>
+                    <p class="tab-links" onclick="opentab('location')">Location</p>
+                    <p class="tab-links" onclick="opentab('colour')">Colour</p>
+                  </div>
+                  <div>
+                    <div class="tab-contents active-tab" id="level">
+                        <ul>
+                            <li><span>FULL</span><br>More than 75%</li>
+                            <li><span>NEARLY</span><br>Equal to 75%</li>
+                            <li><span>LESS</span><br>Less than 75%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="location">
+                        <ul>
+                            <li><span>Potheri Bus Station</span><br>Bin 1</li>
+                            <li><span>Potheri Railway Station</span><br>Bin 2</li>
+                            <li><span>Potheri Market</span><br>Bin 3</li>
+                            <li><span>Potheri College</span><br>Bin 4</li>
+                            <li><span>Potheri School</span><br>Bin 5</li>
+                            <li><span>Potheri Church</span><br>Bin 6</li>
+                            <li><span>Potheri Temple</span><br>Bin 7/li>
+                            <li><span>Potheri Mosque</span><br>Bin 8</li>
+                            <li><span>Potheri Comminity Center</span><br>Bin 9</li>
+                            <li><span>Potheri Park</span><br>Bin 10</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="colour">
+                        <ul>
+                            <li><span>Red</span><br>Completly Filled Bin</li>
+                            <li><span>Yellow</span><br>Nearly Filled Bin</li>
+                            <li><span>Green</span><br>Almost Empty Bin</li>
+                                                       
+                        </ul>
+                    </div>      
+                    </div>
+                  </div>
+                </div>                   
+            </div>
+        </div>
+    </div>
+    <!----------------map----------> 
+    <div id="map">
+        <div class="container">
+            <h1 class="sub-title">Potheri's Map</h1>
+            <div class="map-list">
+                <div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <h2>Potheri Bus Station</h2>
+                    <p>STATUS- Full Bin<br>LOCATION- Potheri Bus Station<br>COLOUR- Red</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle"></i>
+                    <h2>Potheri Railway Station</h2>
+                    <p>STATUS- Moderate Bin<br>LOCATION- Potheri Railway Station<br>COLOUR- Yellow</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <h2>Potheri Market</h2>
+                    <p>STATUS- Empty Bin<br>LOCATION- Potheri Market<br>COLOUR- Green</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <h2>Potheri College</h2>
+                    <p>STATUS- Empty Bin<br>LOCATION- Potheri College<br>COLOUR- Red</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <h2>Potheri School</h2>
+                    <p>STATUS- Full Bin<br>LOCATION- Potheri School<br>COLOUR- Red</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle"></i>
+                    <h2>Potheri Church</h2>
+                    <p>STATUS- Moderate Bin<br>LOCATION- Potheri Church<br>COLOUR- Yellow</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <h2>Potheri Temple</h2>
+                    <p>STATUS- Empty Bin<br>LOCATION- Potheri Temple<br>COLOUR- Green</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <h2>Potheri Mosque</h2>
+                    <p>STATUS- Full Bin<br>LOCATION- Mosque<br>COLOUR- Red</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------location------------>
+    <div id="location">
+       <div class="container">
+        <h1 class="sub-title">Specified Location</h1>
+        <div class="location1-list">
+            <div class="location1">
+        <img src="images/trash1.jpg">
+        <div class="layer">
+            <h3>Potheri Bus  and Railway Station</h3>
+            <p>The Bus Station bin is empty and allows further trash colection.<br>The Railway Station bin is full and needs to be taken out</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="location1">
+        <img src="images/trash2.jpg">
+        <div class="layer">
+            <h3>The Market and College</h3>
+            <p>Potheri Market bin is full and needs to be taken out<br>The College bin is empty </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+    </div>
+    <div class="location1">
+        <img src="images/trash3.jpg">
+        <div class="layer">
+            <h3>Potheri School and Church</h3>
+            <p>The School bin is moderately filled<br>The Church bin is also moderately filled</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+</div>
+  <a href="#" class="btn">See more</a>    
+</div> 
+    </div>
+   <!---------------------contact-------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Us</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>mehuldongre.25@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>9425790167</p>
+            <div class="social-icons">
+                
+                <a href="https://www.linkedin.com/in/mehul-dongre-9981862b2/"><i class="fa-brands fa-twitter"></i>></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+            
+        </div>
+            <div class="contact-right">
+                <form>
+                 <input type="text" name="Name" placeholder="Your Name" required>
+                 <input type="email" name="email" placeholder="Your Email" required>
+                 <textarea name="Messgae" rows="6" placeholder="Your Messgae"></textarea>   
+                 <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mehul. <i class="fa-solid fa-heart"></i></p>
+
+    </div>
+   </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+    </body>
+</html>
