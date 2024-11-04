@@ -1,240 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio Website  </title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/af020c3337.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="TEAMLOGO.jpg" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#problem">Problem</a></li>
-                    <li><a href="#map">Map</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>SDG 11</p>
-                <h1>Smart-Bin<span>Management</span><br>System</h1>
-            </div>
-        </div>
-
-    </div>
-    <!----------------problem----------> 
-    <div id="problem">
-        <div class="container">
-            <div class="row">
-                <div class="problem-col-1">
-                    <img src="mainPhoto.png">
-                </div>
-                <div class="problem-col-2">
-                    <h1 class="sub-title"> Problem Statement</h1>
-                    <p>Overflowing trashcans are common in public spaces and can lead to unsanitary conditions.
-Regular monitoring of trash levels requires significant labor, time, and cost.
-To address this, the project aims to develop a smart system that monitors the fill levels of trashcans, providing real-time updates to streamline waste collection efforts.
-This project integrates a user-friendly interface with robust back-end processing for accurate and efficient tracking.
-</p>                
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('level')">Level</p>
-                    <p class="tab-links" onclick="opentab('location')">Location</p>
-                    <p class="tab-links" onclick="opentab('colour')">Colour</p>
-                  </div>
-                  <div>
-                    <div class="tab-contents active-tab" id="level">
-                        <ul>
-                            <li><span>FULL</span><br>More than 75%</li>
-                            <li><span>NEARLY</span><br>Equal to 75%</li>
-                            <li><span>LESS</span><br>Less than 75%</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="location">
-                        <ul>
-                            <li><span>Potheri Bus Station</span><br>Bin 1</li>
-                            <li><span>Potheri Railway Station</span><br>Bin 2</li>
-                            <li><span>Potheri Market</span><br>Bin 3</li>
-                            <li><span>Potheri College</span><br>Bin 4</li>
-                            <li><span>Potheri School</span><br>Bin 5</li>
-                            <li><span>Potheri Church</span><br>Bin 6</li>
-                            <li><span>Potheri Temple</span><br>Bin 7/li>
-                            <li><span>Potheri Mosque</span><br>Bin 8</li>
-                            <li><span>Potheri Comminity Center</span><br>Bin 9</li>
-                            <li><span>Potheri Park</span><br>Bin 10</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="colour">
-                        <ul>
-                            <li><span>Red</span><br>Completly Filled Bin</li>
-                            <li><span>Yellow</span><br>Nearly Filled Bin</li>
-                            <li><span>Green</span><br>Almost Empty Bin</li>
-                                                       
-                        </ul>
-                    </div>      
-                    </div>
-                  </div>
-                </div>                   
-            </div>
-        </div>
-    </div>
-    <!----------------map----------> 
-    <div id="map">
-        <div class="container">
-            <h1 class="sub-title">Potheri's Map</h1>
-            <div class="map-list">
-                <div>
-                    <i class="fa-solid fa-circle-xmark"></i>
-                    <h2>Potheri Bus Station</h2>
-                    <p>STATUS- Full Bin<br>LOCATION- Potheri Bus Station<br>COLOUR- Red</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-circle"></i>
-                    <h2>Potheri Railway Station</h2>
-                    <p>STATUS- Moderate Bin<br>LOCATION- Potheri Railway Station<br>COLOUR- Yellow</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-check"></i>
-                    <h2>Potheri Market</h2>
-                    <p>STATUS- Empty Bin<br>LOCATION- Potheri Market<br>COLOUR- Green</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-check"></i>
-                    <h2>Potheri College</h2>
-                    <p>STATUS- Empty Bin<br>LOCATION- Potheri College<br>COLOUR- Red</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-circle-xmark"></i>
-                    <h2>Potheri School</h2>
-                    <p>STATUS- Full Bin<br>LOCATION- Potheri School<br>COLOUR- Red</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-circle"></i>
-                    <h2>Potheri Church</h2>
-                    <p>STATUS- Moderate Bin<br>LOCATION- Potheri Church<br>COLOUR- Yellow</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-check"></i>
-                    <h2>Potheri Temple</h2>
-                    <p>STATUS- Empty Bin<br>LOCATION- Potheri Temple<br>COLOUR- Green</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-circle-xmark"></i>
-                    <h2>Potheri Mosque</h2>
-                    <p>STATUS- Full Bin<br>LOCATION- Mosque<br>COLOUR- Red</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------------location------------>
-    <div id="location">
-       <div class="container">
-        <h1 class="sub-title">Specified Location</h1>
-        <div class="location1-list">
-            <div class="location1">
-        <img src="trash1.jpg">
-        <div class="layer">
-            <h3>Potheri Bus  and Railway Station</h3>
-            <p>The Bus Station bin is empty and allows further trash colection.<br>The Railway Station bin is full and needs to be taken out</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-    </div>
-    <div class="location1">
-        <img src="trash2.jpg">
-        <div class="layer">
-            <h3>The Market and College</h3>
-            <p>Potheri Market bin is full and needs to be taken out<br>The College bin is empty </p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-
-    </div>
-    <div class="location1">
-        <img src="trash3.jpg">
-        <div class="layer">
-            <h3>Potheri School and Church</h3>
-            <p>The School bin is moderately filled<br>The Church bin is also moderately filled</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-    </div>
-</div>
-  <a href="#" class="btn">See more</a>    
-</div> 
-    </div>
-   <!---------------------contact-------------->
-   <div id="contact">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Trashcan Management</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('path/to/potheri_map.jpg'); /* Add path to the map of Potheri */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Responsive Container */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        /* Trashcan Styles */
+        .trashcan {
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .trashcan:hover {
+            transform: scale(1.05);
+        }
+        /* Fill Levels */
+        .green { background-color: #4CAF50; }
+        .yellow { background-color: #FFEB3B; color: black; }
+        .red { background-color: #F44336; }
+        /* Headings */
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.5rem;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+            .trashcan {
+                font-size: 1rem;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-        <div class="row">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact Us</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>mehuldongre.25@gmail.com</p>
-            <p><i class="fa-solid fa-square-phone"></i>9425790167</p>
-            <div class="social-icons">
-                
-                <a href="https://www.linkedin.com/in/mehul-dongre-9981862b2/"><i class="fa-brands fa-twitter"></i>></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-
-            </div>
-            
-        </div>
-            <div class="contact-right">
-                <form>
-                 <input type="text" name="Name" placeholder="Your Name" required>
-                 <input type="email" name="email" placeholder="Your Email" required>
-                 <textarea name="Messgae" rows="6" placeholder="Your Messgae"></textarea>   
-                 <button type="submit" class="btn btn2">Submit</button>
-                </form>
-
-            </div>
-
-        </div>
+        <h1>Trashcan Levels in Potheri, Chennai</h1>
+        <!-- Trashcan Locations and Levels -->
+        <div class="trashcan green" onclick="showInfo('Trashcan 1', 'Potheri Railway Station', 'Level < 75%')">Trashcan 1 - Potheri Railway Station</div>
+        <div class="trashcan yellow" onclick="showInfo('Trashcan 2', 'Potheri Bus Station', 'Level = 75%')">Trashcan 2 - Potheri Bus Station</div>
+        <div class="trashcan red" onclick="showInfo('Trashcan 3', 'Potheri College', 'Level > 75%')">Trashcan 3 - Potheri College</div>
+        <div class="trashcan green" onclick="showInfo('Trashcan 4', 'Potheri Temple', 'Level < 75%')">Trashcan 4 - Potheri Temple</div>
+        <div class="trashcan yellow" onclick="showInfo('Trashcan 5', 'Potheri Mosque', 'Level = 75%')">Trashcan 5 - Potheri Mosque</div>
+        <div class="trashcan red" onclick="showInfo('Trashcan 6', 'Potheri Church', 'Level > 75%')">Trashcan 6 - Potheri Church</div>
+        <div class="trashcan green" onclick="showInfo('Trashcan 7', 'Potheri Market', 'Level < 75%')">Trashcan 7 - Potheri Market</div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Mehul. <i class="fa-solid fa-heart"></i></p>
 
-    </div>
-   </div>
-
+    <!-- JavaScript for displaying trashcan info -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
+        function showInfo(name, location, level) {
+            // Create an overlay with trashcan information
+            const infoOverlay = document.createElement('div');
+            infoOverlay.style.position = 'fixed';
+            infoOverlay.style.top = '0';
+            infoOverlay.style.left = '0';
+            infoOverlay.style.width = '100%';
+            infoOverlay.style.height = '100%';
+            infoOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+            infoOverlay.style.display = 'flex';
+            infoOverlay.style.justifyContent = 'center';
+            infoOverlay.style.alignItems = 'center';
+            infoOverlay.style.color = '#fff';
+            infoOverlay.style.fontSize = '1.2rem';
+            infoOverlay.style.textAlign = 'center';
+            infoOverlay.style.padding = '20px';
+
+            // Content for the overlay
+            infoOverlay.innerHTML = `
+                <div style="background-color: #333; padding: 30px; border-radius: 10px; max-width: 90%; width: 300px;">
+                    <h2>${name}</h2>
+                    <p>Location: ${location}</p>
+                    <p>Fill Level: ${level}</p>
+                    <button onclick="closeOverlay()" style="margin-top: 20px; padding: 10px 20px; border: none; background-color: #f44336; color: #fff; font-weight: bold; cursor: pointer; border-radius: 5px;">
+                        Close
+                    </button>
+                </div>
+            `;
+
+            // Append the overlay to the body
+            document.body.appendChild(infoOverlay);
+        }
+
+        // Function to close the overlay
+        function closeOverlay() {
+            const overlay = document.querySelector('body > div:last-child');
+            if (overlay) {
+                overlay.remove();
             }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-
-
-    </script>
-    </body>
+</body>
 </html>
