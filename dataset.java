@@ -6,8 +6,8 @@ import java.sql.Statement;
 class InfinitudeTrashManagement {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/infinitude";
-        String user = "root";    // your MySQL username
-        String password = "Ihaveadream@2025"; // your MySQL password
+        String user = "root";    //  MySQL username
+        String password = "password"; //  MySQL password
 
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
@@ -49,11 +49,15 @@ class InfinitudeTrashManagement {
             stmt.execute(createTrigger);
             System.out.println("Trigger created to update color based on fill_percentage.");
 
-            // Insert sample data
+            // Data from the server gets inputed
             String insertData = "INSERT INTO trash (location, status, fill_percentage) VALUES " +
-                    "('Potheri Bus Station', 'Full', 85), " +
-                    "('Potheri Railway Station', 'Nearly Full', 65), " +
-                    "('Potheri Market', 'Empty', 45)";
+                    "('Potheri Railway Station', 'Empty', 25), " +
+                    "('Potheri Bus Station', 'Nearly Full', 70), " +
+                    "('Potheri College', 'Full', 79), " +
+                    "('Potheri Temple', 'Empty', 20), " +
+                    "('Potheri Mosque', 'Nearly Full', 60), " +
+                    "('Potheri Church', 'Full', 90), " +
+                    "('Potheri Market', 'Empty', 20)";
             stmt.executeUpdate(insertData);
 
             System.out.println("Sample data inserted into trash table successfully.");
